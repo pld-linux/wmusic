@@ -10,15 +10,13 @@ Source0:	http://home.jtan.com/~john/wmusic/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-ac.patch
 URL:		http://home.jtan.com/~john/wmusic/
-BuildRequires:	xmms-devel >= 1.0.0
-BuildRequires:	libdockapp-devel >= 0.3.0
-BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuilDrequires:	xmms-devel
+BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	libdockapp-devel >= 0.3.0
+BuildRequires:	xmms-devel >= 1.0.0
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 wmusic is a dockapp that remote-controls XMMS.
@@ -54,7 +52,8 @@ LDFLAGS="%{rpmldflags} -L/usr/X11R6/lib"
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
-%{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install \
+	PREFIX=$RPM_BUILD_ROOT%{_prefix}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
@@ -64,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(0755,root,root) %{_bindir}/%{name}
+%attr(755,root,root) %{_bindir}/%{name}
 %{_desktopdir}/docklets/%{name}.desktop
