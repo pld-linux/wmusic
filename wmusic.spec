@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://hadess.net/files/%{name}-%{version}.tar.gz
+# Source0-md5:	5491cd70a3b8ba935f0db70f65baf64a
 Source1:	%{name}.desktop
 Patch0:		%{name}-ac.patch
 URL:		http://hadess.net/code.shtml
