@@ -10,9 +10,7 @@ Source0:	ftp://idoru.current.nu/pub/idoru/%{name}-%{version}.tar.gz
 Source1:	wmusic.desktop
 BuildRequires:	xmms-devel >= 1.0.0
 BuildRequires:	libdockapp-devel >= 0.3.0
-BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel >= 1.2.0
-BuildRequires:	glib-devel >= 1.2.0
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
