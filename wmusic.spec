@@ -5,8 +5,6 @@ Version:	1.4.7
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://hadess.net/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://hadess.net/code.shtml
