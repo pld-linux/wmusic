@@ -19,7 +19,6 @@ BuilDrequires:	xmms-devel
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 wmusic is a dockapp that remote-controls xmms.
