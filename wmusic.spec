@@ -12,6 +12,8 @@ Source1:	%{name}.desktop
 BuildRequires:	xmms-devel >= 1.0.0
 BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	autoconf
+BuildRequires:	automake
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
