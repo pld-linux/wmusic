@@ -48,7 +48,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-make install PREFIX=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install PREFIX=$RPM_BUILD_ROOT%{_prefix}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
