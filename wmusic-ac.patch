@@ -1,0 +1,23 @@
+diff -uNr wmusic-1.4.7.orig/configure.in wmusic-1.4.7/configure.in
+--- wmusic-1.4.7.orig/configure.in	Mon May  7 18:40:15 2001
++++ wmusic-1.4.7/configure.in	Sun Jun 30 23:10:31 2002
+@@ -30,8 +30,7 @@
+ AC_DEFINE(XF86DGA,1,[XF86DGA extension is present])
+ DGA_LIBS="-lXxf86dga"],,-L$x_libraries -lXext)
+ 
+-AC_PATH_PROG(PATH_XMMSCONFIG,xmms-config, no,
+-	$PATH:/usr/X11R6/bin:/usr/local/bin)
++AC_PATH_PROG(PATH_XMMSCONFIG,xmms-config, no,$PATH)
+ 
+ if test $PATH_XMMSCONFIG = "no"; then
+ 	echo
+@@ -43,8 +42,7 @@
+ 	exit
+ fi
+ 
+-AC_PATH_PROG(PATH_GTKCONFIG,gtk-config, no,
+-	$PATH:/usr/X11R6/bin:/usr/local/bin)
++AC_PATH_PROG(PATH_GTKCONFIG,gtk-config, no,$PATH)
+ 
+ if test $PATH_GTKCONFIG = "no"; then
+ 	echo
