@@ -44,7 +44,7 @@ xmms. Oto lista niektórych cech programu:
 %build
 CFLAGS="%{rpmcflags} -I/usr/X11R6/include"
 LDFLAGS="%{rpmldflags} -L/usr/X11R6/lib"
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 
