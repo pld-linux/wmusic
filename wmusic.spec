@@ -5,11 +5,12 @@ Version:	1.4.7
 Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://hadess.net/files/%{name}-%{version}.tar.gz
-# Source0-md5:	5491cd70a3b8ba935f0db70f65baf64a
+Source0:	http://www.hadess.net/files/attic/wmusic/%{name}-%{version}.tar.gz
+# Source0-md5:	accd0711d89e4049174a2554e1c61958
+#Source0:	http://home.jtan.com/~john/wmusic/downloads/%{name}-%{version}-old.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-ac.patch
-URL:		http://hadess.net/code.shtml
+URL:		http://home.jtan.com/~john/wmusic/
 BuildRequires:	xmms-devel >= 1.0.0
 BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	gtk+-devel >= 1.2.0
