@@ -15,7 +15,7 @@ BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuilDrequires:  xmms-devel
+BuilDrequires:	xmms-devel
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,19 +24,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 wmusic is a dockapp that remote-controls xmms.
 Here is a list of the features:
-	- VCR style controls including fast rewind and fast forward 
-	- Time and Playlist position display 
-	- Super stylee rotating arrow 
-	- Hiding of the xmms windows (on startup and through middle-click) 
-	- Multi-threaded
+ - VCR style controls including fast rewind and fast forward
+ - Time and Playlist position display
+ - Super stylee rotating arrow
+ - Hiding of the xmms windows (on startup and through middle-click)
+ - Multi-threaded
 
 %description -l pl
-wmusic jest dokowalnym apletem umo¿liwiaj±cym zdalne sterowanie aplikacj±
-xmms. Oto lista niektórych cech programu:
-	- funkcje kontrolne w stylu VCR, m.in. szybkie przewijanie i cofanie
-	- wy¶wietlacz czasu i pozycji z listy odgrywanych utworów
-	- ukrywanie okna xmms
-	- wielow±tkowo¶æ
+wmusic jest dokowalnym apletem umo¿liwiaj±cym zdalne sterowanie
+aplikacj± xmms. Oto lista niektórych cech programu:
+ - funkcje kontrolne w stylu VCR, m.in. szybkie przewijanie i cofanie
+ - wy¶wietlacz czasu i pozycji z listy odgrywanych utworów
+ - ukrywanie okna xmms
+ - wielow±tkowo¶æ
 
 %prep
 %setup -q
