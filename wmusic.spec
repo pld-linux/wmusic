@@ -13,6 +13,7 @@ BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	glib-devel >= 1.2.0
+Obsoletes:	wmplay
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define		_prefix		/usr/X11R6
