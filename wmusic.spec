@@ -5,9 +5,10 @@ Version:	1.2.2
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://idoru.current.nu/pub/idoru/%{name}-%{version}.tar.gz
-Source1:	wmusic.desktop
+Source1:	%{name}.desktop
 BuildRequires:	xmms-devel >= 1.0.0
 BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	gtk+-devel >= 1.2.0
@@ -37,9 +38,8 @@ xmms. Oto lista niektórych cech programu:
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS -I/usr/X11R6/include"
-LDFLAGS="-s -L/usr/X11R6/lib"
-export CFLAGS LDFLAGS
+CFLAGS="%{rpmcflags} -I/usr/X11R6/include"
+LDFLAGS="%{rpmldflags} -L/usr/X11R6/lib"
 %configure
 
 %{__make}
