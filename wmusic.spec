@@ -1,5 +1,5 @@
-Summary:	A remote-control DockApp for xmms
-Summary(pl):	"Pilot" do xmms dla Doku WindowMakera
+Summary:	A remote-control DockApp for XMMS
+Summary(pl):	"Pilot" do XMMS-a dla Doku WindowMakera
 Name:		wmusic
 Version:	1.5.0
 Release:	2
@@ -21,20 +21,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-wmusic is a dockapp that remote-controls xmms.
+wmusic is a dockapp that remote-controls XMMS.
 Here is a list of the features:
  - VCR style controls including fast rewind and fast forward
  - Time and Playlist position display
  - Super stylee rotating arrow
- - Hiding of the xmms windows (on startup and through middle-click)
+ - Hiding of the XMMS windows (on startup and through middle-click)
  - Multi-threaded
 
 %description -l pl
 wmusic jest dokowalnym apletem umo¿liwiaj±cym zdalne sterowanie
-aplikacj± xmms. Oto lista niektórych cech programu:
+XMMS-em. Oto lista niektórych cech programu:
  - funkcje kontrolne w stylu VCR, m.in. szybkie przewijanie i cofanie
  - wy¶wietlacz czasu i pozycji z listy odgrywanych utworów
- - ukrywanie okna xmms
+ - ukrywanie okna XMMS-a
  - wielow±tkowo¶æ
 
 %prep
