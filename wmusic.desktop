@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmusic
+Name=WMusic
 Comment=Remote-control DockApp for xmms
 Comment[pl]=Pilot do xmms dla Doku WindowMakera
 Exec=wmusic
