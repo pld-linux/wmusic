@@ -2,17 +2,19 @@ Summary:	A remote-control DockApp for xmms
 Summary(pl):	"Pilot" do xmms dla Doku WindowMakera
 Name:		wmusic
 Version:	1.4.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://hadess.net/files/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Patch0:		%{name}-ac.patch
 URL:		http://hadess.net/code.shtml
 BuildRequires:	xmms-devel >= 1.0.0
 BuildRequires:	libdockapp-devel >= 0.3.0
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuilDrequires:  xmms-devel
 Obsoletes:	wmplay
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +39,7 @@ xmms. Oto lista niektórych cech programu:
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/X11R6/include"
@@ -55,14 +58,12 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(0755,root,root) %{_bindir}/%{name}
 
 #%{_applnkdir}/DockApplets/%{name}.desktop
