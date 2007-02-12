@@ -1,5 +1,5 @@
 Summary:	A remote-control DockApp for XMMS
-Summary(pl.UTF-8):   "Pilot" do XMMS-a dla Doku WindowMakera
+Summary(pl.UTF-8):	"Pilot" do XMMS-a dla Doku WindowMakera
 Name:		wmusic
 Version:	1.5.0
 Release:	3
