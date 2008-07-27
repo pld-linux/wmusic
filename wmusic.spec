@@ -2,7 +2,7 @@ Summary:	A remote-control DockApp for XMMS
 Summary(pl.UTF-8):	"Pilot" do XMMS-a dla Doku WindowMakera
 Name:		wmusic
 Version:	1.5.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://home.jtan.com/~john/wmusic/%{name}-%{version}.tar.gz
